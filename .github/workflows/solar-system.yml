@@ -9,7 +9,7 @@ on:
 
 env:
     MONGO_URI: ${{vars.MONGO_URI}}
-    MONGO_USER: ${{vars.MONGO_USER}}
+    MONGO_USERNAME: ${{vars.MONGO_USERNAME}}
     MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
     
 jobs:
