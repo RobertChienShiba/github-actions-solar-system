@@ -11,7 +11,7 @@ env:
     MONGO_URI: mongodb+srv://supercluster.d83jj.mongodb.net/superData
     MONGO_USERNAME: superuser
     MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
-    REPO_OWNER: ${{ github.repository_owner }}
+    REPO_OWNER: robertchienshiba
     
 jobs:
     unit-testing:
@@ -92,5 +92,5 @@ jobs:
           with:
             context: .
             push: true
-            tags: ghcr.io/${{ env.REPO_OWNER }}.toLower()/solar-system:${{ github.sha }}
+            tags: ghcr.io/${{ env.REPO_OWNER }}/solar-system:${{ github.sha }}
 
